@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>素のJavaScript 39行で除夜の鐘をつく</title>
+    <script  src="joyanokane.js"></script>
+</head>
+
+<body>
+    <button>合掌</button>
+    <script>
+        window.addEventListener("load",()=>{
+            document.querySelector("button").addEventListener("click",e=>{
+                e.target.disabled = true;
+                gassho();
+            });
+        });
+    </script>
+</body>
+
+</html>
